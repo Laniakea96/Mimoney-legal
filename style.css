@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  color: #1A1B2E;
+  background: #FFFFFF;
+  line-height: 1.6;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  body { color: #E8E9F3; background: #14151F; }
+  header { background: #1A1B2E; border-bottom-color: #2A2B3E; }
+  nav a { color: #B8B9C7; }
+  nav a:hover, nav a.active { color: #FFFFFF; }
+  h1, h2 { color: #FFFFFF; }
+  .lang-toggle { background: #2A2B3E; }
+  .lang-toggle a { color: #B8B9C7; }
+  .lang-toggle a.active { background: #4A6CF7; color: #FFFFFF; }
+  footer { color: #6B6D80; border-top-color: #2A2B3E; }
+}
+
+header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #E8E9F0;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-logo {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #4A6CF7, #7B4AF7);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: -0.3px;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  margin-top: 14px;
+  font-size: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6B6D80;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+nav a:hover, nav a.active {
+  color: #1A1B2E;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  margin-bottom: 8px;
+  color: #1A1B2E;
+}
+
+.last-updated {
+  color: #6B6D80;
+  font-size: 14px;
+  margin-bottom: 36px;
+}
+
+.lang-toggle {
+  display: inline-flex;
+  background: #F2F3F8;
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lang-toggle a {
+  padding: 8px 16px;
+  border-radius: 7px;
+  text-decoration: none;
+  color: #6B6D80;
+  transition: all 0.15s;
+}
+
+.lang-toggle a.active {
+  background: #4A6CF7;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin: 36px 0 12px;
+  color: #1A1B2E;
+}
+
+p {
+  margin-bottom: 16px;
+  color: inherit;
+}
+
+a.contact {
+  color: #4A6CF7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a.contact:hover { text-decoration: underline; }
+
+.faq-item {
+  margin-bottom: 18px;
+  padding-left: 18px;
+  border-left: 3px solid #4A6CF7;
+}
+
+footer {
+  border-top: 1px solid #E8E9F0;
+  padding: 32px 24px;
+  text-align: center;
+  color: #6B6D80;
+  font-size: 14px;
+}
